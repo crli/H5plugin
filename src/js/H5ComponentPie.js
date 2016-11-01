@@ -32,7 +32,7 @@ window.H5ComponentPie =function ( name, cfg ) {
     ctx.beginPath();
     ctx.fillStyle=color;
     ctx.strokeStyle=color;
-    ctx.lineWidth = .1;
+    ctx.lineWidth = .01;
 
     ctx.moveTo(r,r);
     ctx.arc(r,r,r,sAngel,eAngel);

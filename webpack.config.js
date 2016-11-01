@@ -221,7 +221,7 @@ var plugins = [
         chunks: ['common', 'index', 'webpackAssets'],
 
         // 根据依赖自动排序
-        chunksSortMode: 'dependency'
+        // chunksSortMode: 'dependency'
     })
 ];
 
