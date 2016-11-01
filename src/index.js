@@ -77,8 +77,8 @@ $(function  () {
             delay:500
         })
         .addComponent('face_img_left',{
-            width:120,
-            height:160,
+            width:185,
+            height:247,
             bg:face_img_left,
             css:{opacity:0,left:-50,bottom:-50},
             animateIn:{opacity:1,left:0,bottom:0},
@@ -86,8 +86,8 @@ $(function  () {
             delay:1000
         })
         .addComponent('face_img_right',{
-            width:92,
-            height:150,
+            width:138,
+            height:225,
             bg:face_img_right,
             css:{opacity:0,right:-50,bottom:-50},
             animateIn:{opacity:1,right:0,bottom:0},
@@ -102,15 +102,15 @@ $(function  () {
             center:true,
             text:'还没想好怎么说',
             css:{
-                opacity:0,textAlign:'center',color:'red'
+                opacity:0,textAlign:'center',color:'red',fontSize:'26px'
             },
             animateIn:{opacity:1,top:120},
             animateOut:{opacity:0,top:240},
         })
         .addComponent('description',{
             center:true,
-            width:210,
-            height:200,
+            width:260,
+            height:248,
             bg:description_bg,
             css:{
                 "box-sizing":"border-box",
@@ -123,14 +123,14 @@ $(function  () {
                 top:240
             },
             text:'基于jQuery、fullpage.js开发、大部分地方采用canvas画图展示数据，现有7中展示样式，正逐步开发中。。。',
-            animateIn:{opacity:1,top:210},
+            animateIn:{opacity:1,top:190},
             animateOut:{opacity:0,top:240},
             delay:1000
         })
         .addComponent('people',{
             center:true,
-            width:200,
-            height:120,
+            width:257,
+            height:152,
             bg:p1_people,
             css:{
                 opacity:0,
@@ -141,14 +141,14 @@ $(function  () {
             delay:500
         })
     .addPage()
-        .addComponent('caption',{text:'折线图组件对象'})
+        .addComponent('caption',{text:'柱图组件对象'})
         .addComponent('polyline',{
             type:'polyline',
             data:[
-                ['哈哈哈哈',.4,'#ff7676'],
-                ['哈哈哈哈',.2],
-                ['哈哈哈哈',.3,'blue'],
-                ['哈哈哈哈',.1]
+                ['前端开发',.4,'#ff7676'],
+                ['移动开发',.2],
+                ['后端开发',.3,'blue'],
+                ['图像处理',.1]
             ],
             width:265,
             height:150,
@@ -160,7 +160,7 @@ $(function  () {
         .addComponent('msg',{
             text:'还没想好怎么说',
             css:{
-                opacity:0,top:180,
+                opacity:0,top:160,
                 textAlign:'center',width:'100%',color:'#ff7676'
             },
             animateIn:{ opacity:1},
@@ -171,10 +171,10 @@ $(function  () {
         .addComponent('pie',{
             type:'pie',
             data:[
-                ['哈哈' , .1  ,'#ff7676'],
-                ['哈哈' , .2 ],
-                ['哈哈' , .3 ],
-                ['哈哈' , .4  ]
+                ['Android' , .1  ,'#ff7676'],
+                ['前端' , .2 ],
+                ['IOS' , .3 ],
+                ['Cocos2d-x' , .4  ]
             ],
             css:{top:200},
             width:150,
@@ -222,7 +222,7 @@ $(function  () {
         .addComponent('msg',{
             text:'还没想好怎么说',
             css:{
-                opacity:0,bottom:90,
+                opacity:0,bottom:120,
                 textAlign:'center',width:'100%',color:'#ff7676'
             },
             animateIn:{ opacity:1},
@@ -296,7 +296,7 @@ $(function  () {
           .addComponent('ring-all',{
               type : 'ring',center : true,
               width : 150,height : 150,
-              data:[['哈哈' , .7  ,'#ff7676']],
+              data:[['总课程' , .7  ,'#ff7676']],
               css : { top:120,opacity:0 ,fontSize:'30px'},
               animateIn: { opacity:1},
               animateOut:{ opacity:0},
@@ -314,7 +314,7 @@ $(function  () {
           .addComponent('ring-1',{
               type : 'ring',center : true,
               width : 70,height : 70,
-              data:[['哈哈' , .4  ,'darkorange']],
+              data:[['前端开发' , .4  ,'darkorange']],
               css : { left:30,bottom:110,opacity:0,fontSize:'12px' },
               animateIn: { opacity:1},
               animateOut:{ opacity:0},
@@ -322,7 +322,7 @@ $(function  () {
           .addComponent('ring-2',{
               type : 'ring',
               width : 70,height : 70,
-              data:[['哈哈' , .3  ,'darkorange']],
+              data:[['后端开发' , .3  ,'darkorange']],
               css : { left:30,bottom:110,opacity:0,fontSize:'12px' },
               animateIn: { opacity:1},
               animateOut:{ opacity:0},
@@ -330,7 +330,7 @@ $(function  () {
           .addComponent('ring-3',{
               type : 'ring',
               width : 70,height : 70,
-              data:[['哈哈' , .2  ,'darkorange']],
+              data:[['移动开发' , .2  ,'darkorange']],
               css : { right:30,bottom:110,opacity:0,fontSize:'12px' },
               animateIn: { opacity:1},
               animateOut:{ opacity:0},
@@ -338,7 +338,7 @@ $(function  () {
           .addComponent('ring-3',{
               type : 'ring',
               width : 70,height : 70,
-              data:[['哈哈' , .1  ,'darkorange']],
+              data:[['数据处理' , .1  ,'darkorange']],
               css : { left:70,bottom:40,opacity:0,fontSize:'12px' },
               animateIn: { opacity:1},
               animateOut:{ opacity:0},
@@ -346,7 +346,7 @@ $(function  () {
           .addComponent('ring-3',{
               type : 'ring',
               width : 70,height : 70,
-              data:[['哈哈' , .1  ,'darkorange']],
+              data:[['图像处理' , .1  ,'darkorange']],
               css : { right:70,bottom:40,opacity:0,fontSize:'12px' },
               animateIn: { opacity:1},
               animateOut:{ opacity:0},
@@ -358,12 +358,12 @@ $(function  () {
             width : 150,
             height : 150,
             data:[
-              ['哈哈' , .4  ,'#ff7676'],
-              ['哈哈' , .2  ,'#ffa3a4', 0 ,'-60%'],
-              ['哈哈' , .3  ,'#99c1ff', '50%' ,'-120%']
+              ['中级' , .4  ,'#ff7676'],
+              ['初级' , .2  ,'#ffa3a4', 0 ,'-60%'],
+              ['高级' , .3  ,'#99c1ff', '50%' ,'-120%']
             ],
             css : {
-              bottom:'20%'
+              bottom:'25%'
             },
             center : true,
         })
